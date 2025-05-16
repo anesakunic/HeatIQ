@@ -1,16 +1,61 @@
-# heat_iq_app
+# HeatIQ Mobile App
 
-A new Flutter project.
+A smart heating control system mobile application built with Flutter. This repository contains the frontend implementation of the HeatIQ app.
 
-## Getting Started
+## Prerequisites
 
-This project is a starting point for a Flutter application.
+Before running the app, make sure you have the following installed:
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter](https://flutter.dev/docs/get-started/install) (SDK version ^3.7.2)
+- [Xcode](https://apps.apple.com/us/app/xcode/id497799835) (for iOS development)
+- [Android Studio](https://developer.android.com/studio) (for Android development and Android SDK)
+- [CocoaPods](https://cocoapods.org/) (for iOS dependencies)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Setup
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/heat_iq_app.git
+cd heat_iq_app
+```
+
+2. Install dependencies:
+
+```bash
+flutter pub get
+```
+
+3. Install iOS dependencies:
+
+```bash
+cd ios
+pod install
+cd ..
+```
+
+## Running the App
+
+### For iOS:
+
+```bash
+flutter run -d ios    # For iOS Simulator
+```
+
+### For Android:
+
+```bash
+flutter run -d android    # For Android Emulator
+```
+
+## Features
+
+- Smart thermostat control
+- Room temperature monitoring
+- Device management
+- User profile management
+- Temperature scheduling
+
+## Note
+
+This is a frontend-only implementation. Backend integration is required for full functionality. Backend API endpoints are documented in the code comments.
